@@ -1,0 +1,25 @@
+spring:
+  main:
+    web-application-type: reactive
+  cloud:
+    discovery:
+      enabled: true
+  application:
+    name: GATEWAY-SERVICE
+
+server:
+  port: 8989
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
