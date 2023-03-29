@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Abdulhafiz/cloude-config-server
+          uri: https://github.com/Abdulhafiz/spring-cloud-gatway-eureka-config/cloude-config-server
 
 server:
   port: 9196
